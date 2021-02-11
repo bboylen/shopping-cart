@@ -1,0 +1,30 @@
+{
+  "Pine": {
+    "price": "2.75",
+    "picture": ""
+  },
+  "Birch": {
+    "price": "5",
+    "picture": ""
+  },
+  "Cherry": {
+    "price": "6.50",
+    "picture": ""
+  },
+  "Chestnut": {
+    "price": "16",
+    "picture": ""
+  },
+  "Ebony": {
+    "price": "100",
+    "picture": ""
+  },
+  "Mahogany": {
+    "price": "10.50",
+    "picture": ""
+  },
+  "Maple": {
+    "price": "7.50",
+    "picture": ""
+  },
+}
