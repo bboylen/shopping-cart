@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { React, useState, useEffect } from 'react';
+import Nav from "./components/Nav";
+import Home from "./components/Home";
+import Shop from "./components/Shop";
+import Cart from "./components/Cart";
 
-function App() {
+export default function App() {
+  const [ cartItems, setCartItems ] = useState([]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Nav />
+        <Switch>
+          <Route path="/shop" component={Shop}/>
+          <Route path="/cart" component={Cart}/>
+          <Route path="/" component={Home}/>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;
