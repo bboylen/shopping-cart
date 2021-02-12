@@ -1,0 +1,17 @@
+.item {
+  width: 350px;
+  height: 250px;
+  margin: 10px;
+  background-color: blue;
+}
+
+.image {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+}
+
+.item-info {
+  width: 100px;
+  height: 250px;
+}

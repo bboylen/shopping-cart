@@ -23,11 +23,21 @@
   padding-bottom: 5px;
   margin-left: 5px;
 }
-.nav a:link{
+.nav a:link {
   text-decoration: none;
 }
 
-.nav a:visited{
+.nav a:visited {
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav a {
+    font-size: 10px;
+  }
+
+  .nav .cart-sum {
+    font-size: 22px;
+  }
 }
