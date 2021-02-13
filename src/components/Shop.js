@@ -1,15 +1,19 @@
-import '../styles/Shop.css';
-import Item from './Item';
-import itemData from '../assets/data/itemData.json';
+import "../styles/Shop.css";
+import Item from "./Item";
+import itemData from "../assets/data/itemData.js";
 
 export default function Shop(props) {
   return (
     <div className="shop">
       <div className="items">
-        {Object.keys(itemData).map((woodType) => (
-          <Item woodType={woodType} price={itemData[woodType].price}/>
+        {itemData.map((woodType) => (
+          <Item
+            woodType={woodType.name}
+            price={woodType.price}
+            picture={woodType.picture}
+          />
         ))}
       </div>
     </div>
-  )
+  );
 }

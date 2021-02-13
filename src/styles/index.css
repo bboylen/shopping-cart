@@ -8,3 +8,8 @@ html {
 body {
   margin: 0;
 }
+
+@font-face {
+  font-family: "Pinewood";
+  src: local('Pinewood'), url(../assets/fonts/Pinewood-gmE1.ttf) format('truetype');
+}

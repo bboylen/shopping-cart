@@ -8,15 +8,25 @@
   background-color: tan;
   justify-content: space-around;
   align-items: center;
+  background-color: #20b021;
 }
 
-.fa-shopping-cart {
+#title {
+  font-family: Pinewood, serif;
+  color: #9e6506;
+  font-size: 36px;
+}
+
+#shop {
+  font-family:'Times New Roman', Times, serif;
+}
+/* .fa-shopping-cart {
   color: red;
 }
 
 .fa-shopping-cart:hover {
   color: red;
-}
+} */
 
 .nav .cart-sum {
   font-size: 26px;
@@ -33,6 +43,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  #title {
+    font-size: 25px;
+  }
   .nav a {
     font-size: 10px;
   }
