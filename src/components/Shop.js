@@ -3,6 +3,7 @@ import Item from "./Item";
 import itemData from "../assets/data/itemData.js";
 
 export default function Shop(props) {
+  const { addToCart } = props;
   return (
     <div className="shop">
       <div className="items">
@@ -11,6 +12,7 @@ export default function Shop(props) {
             woodType={woodType.name}
             price={woodType.price}
             picture={woodType.picture}
+            addToCart={addToCart}
           />
         ))}
       </div>

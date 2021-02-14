@@ -22,6 +22,14 @@ export default function App() {
     setItemSum(sumCart);
   }, [cartItems]);
 
+  const addToCart = (woodType, amount) => {
+    if (cartItems[woodType]) {
+      setCartItems({...cartItems, [woodType]: (cartItems[woodType] + amount)})
+    } else {
+      setCartItems({...cartItems, [woodType]: amount})
+    }
+  }
+
   return (
     <Router>
       <div className="app">
@@ -29,7 +37,7 @@ export default function App() {
         <Switch>
           <Route
             path="/shop"
-            render={(routeProps) => <Shop {...routeProps} />}
+            render={(routeProps) => <Shop {...routeProps} addToCart={addToCart}/>}
           />
           <Route
             path="/cart"
