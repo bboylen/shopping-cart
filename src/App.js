@@ -42,7 +42,7 @@ export default function App() {
           <Route
             path="/cart"
             render={(routeProps) => (
-              <Cart {...routeProps} cartItems={cartItems} />
+              <Cart {...routeProps} cartItems={cartItems} addToCart={addToCart}/>
             )}
           />
           <Route path="/" component={Home} />

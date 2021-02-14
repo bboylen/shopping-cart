@@ -1,0 +1,85 @@
+.shop {
+  .item {
+    width: 450px;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    text-align: center;
+  }
+
+  .image {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+  }
+
+  .item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 250px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 28px;
+  }
+
+  .item-info p:first-child {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .item-info p:nth-child(2) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .items form {
+    width: 80%;
+    text-align: center;
+  }
+
+  .item-info button {
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+    background-color: white;
+    font-size: 24px;
+  }
+
+  .item-info button:hover {
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  #input-container {
+    width: 100%;
+  }
+
+  #input-container input {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .item {
+      width: 200px;
+      height: 100px;
+    }
+
+    .image {
+      width: 100px;
+      height: 100px;
+    }
+
+    .item-info {
+      width: 100px;
+      height: 100px;
+      font-size: 18px;
+    }
+
+    .item-info button {
+      font-size: 16px;
+    }
+  }
+}

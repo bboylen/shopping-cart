@@ -2,3 +2,14 @@
   padding-top: 100px;
   height: 100vh;
 }
+
+.cart .items {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

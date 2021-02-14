@@ -1,5 +1,5 @@
 import "../styles/Shop.css";
-import Item from "./Item";
+import Item from "./ShopItem";
 import itemData from "../assets/data/itemData.js";
 
 export default function Shop(props) {

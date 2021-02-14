@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import "../styles/Item.css";
+import "../styles/CartItem.scss";
 
 export default function Item(props) {
   const { woodType, price, picture, addToCart } = props;
