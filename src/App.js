@@ -30,6 +30,10 @@ export default function App() {
     }
   }
 
+  const modifyCart = (woodType, amount) => {
+    setCartItems({...cartItems, [woodType]: amount})
+  }
+
   return (
     <Router>
       <div className="app">
@@ -42,7 +46,7 @@ export default function App() {
           <Route
             path="/cart"
             render={(routeProps) => (
-              <Cart {...routeProps} cartItems={cartItems} addToCart={addToCart}/>
+              <Cart {...routeProps} cartItems={cartItems} modifyCart={modifyCart}/>
             )}
           />
           <Route path="/" component={Home} />

@@ -13,3 +13,22 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.sum {
+  width:50%;
+  margin: 40px auto 50px auto;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.sum h2{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sum button {
+  margin-bottom: 30px;
+}

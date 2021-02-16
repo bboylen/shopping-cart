@@ -1,18 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import "../styles/CartItem.scss";
 
 export default function Item(props) {
-  const { woodType, price, picture, addToCart } = props;
-  const [ amount, setAmount ] = useState(0);
-
-  const handleForm = (e) => {
-    e.preventDefault();
-    addToCart( woodType, parseInt(amount));
-  };
+  const { woodType, price, picture, initialAmount, modifyCart } = props;
+  const [ amount, setAmount ] = useState(initialAmount);
 
   const handleChange = (e) => {
     setAmount(e.target.value);
   }
+
+  useEffect(() => {
+    modifyCart( woodType, parseInt(amount));
+  },[amount])
 
   return (
     <div className="item">
@@ -20,11 +19,10 @@ export default function Item(props) {
       <div className="item-info">
         <p>{woodType}</p>
         <p>{`$${price}/BF`}</p>
-        <form onSubmit={handleForm}>
+        <form>
           <div id="input-container">
             <input type="number" min="0" value={amount} onChange={handleChange}></input>
           </div>
-          <button type="submit">Add to Cart</button>
         </form>
       </div>
     </div>

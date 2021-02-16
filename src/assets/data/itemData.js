@@ -44,4 +44,34 @@ const itemsList = [
   }
 ];
 
-export default itemsList;
+const itemsList2 = {
+  Pine : {
+    "price": "2.75",
+    "picture": pine
+  },
+  Birch : {
+    "price": "5.00",
+    "picture": birch
+  },
+  Cherry : {
+    "price": "6.50",
+    "picture": cherry
+  },
+  Chestnut : {
+    "price": "16.00",
+    "picture": chestnut
+  },
+  Ebony : {
+    "price": "100.00",
+    "picture": ebony
+  },
+  Mahogany :  {
+    "price": "10.50",
+    "picture": mahogany
+  },
+  Maple : {
+    "price": "7.50",
+    "picture": maple
+  }
+};
+export default itemsList2;
