@@ -18,7 +18,6 @@ export default function Nav(props) {
         <FontAwesomeIcon icon={faShoppingCart} size="2x"/>
         <span className="cart-sum">({itemSum})</span>
       </Link>
-      
     </div>
   )
 }

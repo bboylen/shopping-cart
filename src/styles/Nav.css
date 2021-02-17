@@ -20,19 +20,13 @@
 #shop {
   font-family:'Times New Roman', Times, serif;
 }
-/* .fa-shopping-cart {
-  color: red;
-}
-
-.fa-shopping-cart:hover {
-  color: red;
-} */
 
 .nav .cart-sum {
   font-size: 26px;
   padding-bottom: 5px;
   margin-left: 5px;
 }
+
 .nav a:link {
   text-decoration: none;
 }
